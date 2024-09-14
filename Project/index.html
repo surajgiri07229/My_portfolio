@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav id="desktop-nav">                            <!-- Navigation Bar-->
+        <div class="logo"> Suraj Giri</div>           <!-- Logo-->
+        <div> <ul class="nav-links">                  <!--list of items like home, about, projects -->
+            <li> <a href="#about">About</a></li>      <!--references to reach specific section using #   <a means clickable link-->          
+            <li> <a href="#experience">Experience</a></li>                 
+            <li> <a href="#projects">Projects</a></li>                 
+            <li> <a href="#contact">Contact</a></li>                
+        </ul></div>
+    </nav>
+    <!-- This nav is for mobile view -->
+    <nav id="hamburger-nav">
+        <div class="logo"> Suraj Giri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+               <!-- Lines of hamburger-menu -->
+                <span></span>   
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>      <!--references to reach specific section using # -->          
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>                 
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>                 
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <!-- profile section contains photo, buttons, some texts-->
+    <section id="profile">
+        <div class="section__pic-containerh">
+            <img src="./assets/passport-modified.png" alt="Your profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Suraj Giri</h1>
+            <span></span>
+
+            <!-- Attaching the resume -->
+
+            <div class="btn-container">
+                <button onclick="location.href='./assets/My_Resumee.pdf'" download class="btn btn-color2"><i class='bx bxs-download'></i> Download CV</button>
+                <button class="btn btn-color1"  onclick="location.href='./#contact'"> <svg
+                    class="spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="o1"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="o2"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>Contact</button>
+            </div>
+            
+            <!-- Social Network -->
+            
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/suraj-giri-1608131ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/surajgiri07229'">
+        </div>
+        
+    </section>
+    <div class="text-box">
+        <p class="section__text_p1">Get To Know More</p>
+    </div>
+    <!-- about section -->
+    <section id="about">
+        
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic">
+                <img src="./assets/passport-full4.png" 
+                alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon" class="icon">
+                        <h3 class="exps">Experience</h3>
+                        <p class="exps">8 Months+<br>Fullstack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"   
+                        alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors Of Technology <br> In Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                     programming, dedicated to creating sophisticated web applications and backend solutions. <br> My expertise extends to Unity, where I specialize in developing immersive Augmented <br> Reality experiences. Combining my skills in web design with cutting-edge AR <br> technology, I craft engaging and interactive digital solutions that not only <br> meet but exceed user expectations. My approach is to integrating <br> functionality with creativity, ensuring each project is both <br> visually appealing and highly effective."
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="arrow-down" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <div class="text-box">
+            <p class="section__text_p1">Explore My</p>
+        </div>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containerx">
+                    <h2 class="experience-sub-title"> < Frontend Development /></h2>
+                    <div class="article1-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article class="art">
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Javascript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Bootstrap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>React Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Tailwind CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containerx">
+                    <h2 class="experience-sub-title">{ Backend Development }</h2>
+                    <div class="article1-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>MongoDB</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Express Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Node Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                       
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" class="icons">
+                            <div class="text-exp">
+                                <h3>Git & Github</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="arrow-down" onclick="location.href='./#projects'">
+    </section>
+
+    <!-- Project section -->
+    <section id="projects">
+        <div class="text-box">
+            <p class="section__text_p1">Browse My Recent</p>
+        </div>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- project one -->
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/whether.png" alt="Whether-app" class="project-img">
+                </div>
+                <h2 class="experience-sub-title Project-title">Whether Application</h2>
+                <div class="btn-container">
+                    <button class="project-btn1" onclick="location.href='https://github.com'">
+                        
+                        Github
+                    </button>
+
+                    <button class="project-btn2" onclick="location.href='https://github.com'">
+                        <svg
+                    class="spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="o1"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="o2"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- project second -->
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/travely.png" alt="Whether-app" class="project-img">
+                </div>
+                <h2 class="experience-sub-title Project-title">Travel Booking</h2>
+                <div class="btn-container">
+                    <button class="project-btn1" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+
+                    <button class="project-btn2" onclick="location.href='https://github.com'">
+                        <svg
+                    class="spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="o1"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="o2"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- project third -->
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/ecommerce3.png" alt="Whether-app" class="project-img">
+                </div>
+                <h2 class="experience-sub-title Project-title">E-commerce Website</h2>
+                <div class="btn-container">
+                    <button class="project-btn1" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+
+                    <button class="project-btn2" onclick="location.href='https://github.com'">
+                        <svg
+                    class="spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="o1"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="o2"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>Demo
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="arrow-down" onclick="location.href='./#contact'">
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <div class="text-box">
+            <p class="section__text_p1">Get In Touch</p>
+        </div>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon-contact1">
+                 <p class="mail">Example@gmail.com</p>  <!--it open the personal mail to send an email -->
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon-contact2">
+                 <p class="linked">LinkedIn</p>  <!--it open the personal mail to send an email -->
+            </div>
+        </div>
+        <div class="contact-right" style="margin-top: 0rem;">
+            <form class="textarea">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+            </form>
+        </div>
+    </section>
+    <div class="button" style="margin-top: 2rem;">
+        <div class="content">
+            <i class="bx bx-cloud-upload"></i>
+            <span class="button-text">Submit</span>
+            
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container" style="margin-top: 5rem;">
+                <ul class="nav-links">                  <!--list of items like home, about, projects -->
+                    <li> <a href="#about">About</a></li>      <!--references to reach specific section using # -->          
+                    <li> <a href="#experience">Experience</a></li>                 
+                    <li> <a href="#projects">Projects</a></li>                 
+                    <li> <a href="#contact">Contact</a></li>                
+                </ul>
+            </div>
+        </nav>
+        <p class="rights">Copyright &#169; 2024 Suraj Giri. All Rights Reserved.</p>
+    </footer>
+    <!--Javascript file attaching in body section-->
+    <script src="script.js"></script>
+</body>
+</html>
